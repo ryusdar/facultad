@@ -1,0 +1,45 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>venta</title>
+    <link rel="stylesheet" href="../css/venta.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <header>
+        <a href="../index.html">
+            <img src="../assets/captura.png" alt="">
+        </a>
+        <a href="../templates/producto2.html"> alquiler </a>
+        <a href="../templates/contacto.html">Contactanos</a>
+    </header>
+    <main>
+        <h2>Formulario para vender una propiedad</h2>
+        <form action="formulario_vender" method="post">
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" required><br>
+
+            <label for="email">Correo electrónico:</label><br>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="telefono">Teléfono:</label><br>
+            <input type="tel" id="telefono" name="telefono" required><br>
+
+            <label for="direccion">Dirección de la propiedad:</label><br>
+            <input type="text" id="direccion" name="direccion" required><br>
+
+            <label for="descripcion">Descripción de la propiedad:</label><br>
+            <textarea id="descripcion" name="descripcion" rows="4" cols="50" required></textarea><br>
+
+            <label for="valor">valor de la propiedad</label><br>
+            <textarea type="num" name="valor" id="valor"></textarea>
+            <input type="submit" value="Enviar">
+        </form>
+
+</body>
+
+</html>

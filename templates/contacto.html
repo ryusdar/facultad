@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de contacto</title>
+    <link rel="stylesheet" href="../css/contacto.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+<body>
+    <header>
+        <header>
+            <a href="../index.html">
+                <img src="../assets/captura.png" alt="">
+            </a>
+    
+        </header>
+    </header>
+    <main>
+        <h2>Formulario de contacto</h2>
+    <form action="/procesar_formulario_contacto" method="post">
+        <label for="nombre_contacto">Nombre:</label><br>
+        <input type="text" id="nombre_contacto" name="nombre_contacto" required><br>
+        
+        <label for="email_contacto">Correo electrónico:</label><br>
+        <input type="email" id="email_contacto" name="email_contacto" required><br>
+        
+        <label for="telefono_contacto">Teléfono:</label><br>
+        <input type="tel" id="telefono_contacto" name="telefono_contacto" required><br>
+        
+        <label for="mensaje_contacto">Mensaje:</label><br>
+        <textarea id="mensaje_contacto" name="mensaje_contacto" rows="4" cols="50" required></textarea><br>
+        
+        <input type="submit" value="Enviar">
+    </form>
+    </main>
+</body>
+</html>
