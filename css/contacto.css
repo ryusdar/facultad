@@ -1,0 +1,18 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0 auto;
+    background-color: grey;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: whitesmoke;
+    box-shadow: 2px 2px 5px black;
+}
+
+header img{
+    width: 100px;
+    margin: 10px;
+}
+
+
