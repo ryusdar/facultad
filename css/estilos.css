@@ -97,6 +97,13 @@ header img {
  text-decoration: underline;
  text-shadow: 0px -1px 2px black;
 }
+.precio2{
+    position: relative;
+    top: -300px;
+    left: 100px;
+    text-decoration: underline;
+    text-shadow: 0px -1px 2px rgb(143, 139, 139);
+   }
 .h1{
     position: relative;
     top: -50px;
