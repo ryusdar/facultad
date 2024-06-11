@@ -162,3 +162,8 @@ footer{
     left: 500px;
     top: -60px;
 }
+.img{
+    position: relative;
+    height: 40px;
+    top: 50px;
+}
