@@ -143,6 +143,18 @@ footer{
     background-repeat: no-repeat;
     background-position: center;
 
+}
+.final-titulo{
+ color: whitesmoke;
 
 
 }
+.final-p{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    right: 220px;
+    top: 55px;
+    color: whitesmoke;
+}
+
