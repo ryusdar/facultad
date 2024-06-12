@@ -150,6 +150,7 @@ footer{
 
 }
 .final-p{
+    height: 120px;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -166,4 +167,10 @@ footer{
     position: relative;
     height: 40px;
     top: 50px;
+}
+.img2{
+    position: relative;
+    height: 40px;
+    top: 50px;
+    left: 10px;
 }
