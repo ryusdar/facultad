@@ -14,7 +14,25 @@ header img{
     width: 100px;
     margin: 20px;
 }
-
+.navegacion {
+    display: flex;
+    justify-content: space-around;
+}
+.navegacion a {
+    text-align: center;
+    align-content: center;
+    color: rgb(20, 20, 20);
+    text-decoration: none;
+    font-weight: 700;
+    margin-right: 15px;
+    height: fit-content;
+    margin-top: 40px;
+    padding: 6px;
+}
+.navegacion a:hover {
+    color: blue;
+    box-shadow: 2px 2px 5px black;
+}
 .formulario_vender{
  background-color:aliceblue;
 

@@ -54,12 +54,12 @@ header img {
     display: flex;
     justify-content: space-between; /* Coloca las tarjetas una al lado de la otra */
     margin-top: 20px; /* Espacio entre las tarjetas */
+    flex-wrap: wrap;
 }
 
 .tarjeta {
     flex: 0 1 calc(50% - 10px); /* Establece el ancho de cada tarjeta, con un margen de 10px entre ellas */
     display: flex;
-    
     flex-direction: column;
     box-shadow: 2px 2px 5px black;
     border-radius: 8px;
@@ -91,13 +91,24 @@ header img {
 
 }
 .precio{
- position: relative;
- top: -300px;
- left: 150px;
+ position: absolute;
+ color: black;
  text-decoration: underline;
  text-shadow: 0px -1px 2px black;
 }
+
+@media (min-width:320px){
+    .precio{
+        color: black;
+     position: relative;
+     top: -300px;
+     left: 110px;
+     text-decoration: underline;
+     text-shadow: 0px -1px 2px black;
+    }
+}
 .precio2{
+    color: black;
     position: relative;
     top: -300px;
     left: 150px;
@@ -105,6 +116,16 @@ header img {
     text-shadow: 0px -1px 2px rgb(143, 139, 139);
     
    }
+   @media (min-width:320px){
+    .precio2{
+        color: black;
+        position: relative;
+     top: -300px;
+     left: 110px;
+     text-decoration: underline;
+     text-shadow: 0px -1px 2px black;
+    }
+}
 .h1{
     position: relative;
     top: -50px;
@@ -127,6 +148,7 @@ header img {
     margin-top: 10px;
     text-decoration: none;
     color: aliceblue;
+    margin: auto;
     
 }
 .btn1 {
@@ -136,16 +158,14 @@ header img {
     margin-top: 10px;
     text-decoration: none;
     color: aliceblue;
+    margin: auto;
     
-    top: 25px;
-    position: relative;
 }
 
 .contenedor2{
     background-color: aliceblue;
 }
-@media (min-width:320px){
- footer{
+footer{
     background-image: url("../assets/humo-blanco-sobre-fondo-negro_23-2147611843.jpg");
     display: flex;
     height: 200px;
@@ -155,13 +175,15 @@ header img {
     background-position: center;
     position: relative;
 
- }
- .final-titulo{
+}
+
+.final-titulo{
  color: whitesmoke;
 
 
- }
- .final-p{
+}
+
+.final-p{
     height: 120px;
     position: relative;
     display: flex;
@@ -169,21 +191,47 @@ header img {
     right: 250px;
     top: 55px;
     color: whitesmoke;
- }
- .h12{
-    position: relative;
-    left: 500px;
-    top: -60px;
- }
- .img{
-    position: relative;
-    height: 40px;
-    top: 50px;
- }
- .img2{
-    position: relative;
-    height: 40px;
-    top: 50px;
-    left: 10px;
- }
 }
+@media (min-width: 320px) and (max-width: 767px) {
+    .final-p{
+        right: 150px;
+    }
+}
+.h12{
+     top: -70px;
+        position: relative;
+        left: 400px;
+        margin: auto;
+    
+}
+@media (min-width: 320px) and (max-width: 767px) {
+    .h12{
+        left: 300px;
+    }
+       
+}   
+.img{
+    position: relative;
+    height: 40px;
+    top: 50px;
+    left: -100px;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+    .img{
+        top: 90px;
+    }
+       
+}   
+ 
+.img2{
+ position: relative;
+  height: 40px;
+  top: 50px;
+  left: -90px;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+    .img2{
+        top: 90px;
+    }
+       
+}   
