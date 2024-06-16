@@ -144,8 +144,8 @@ header img {
 .contenedor2{
     background-color: aliceblue;
 }
-
-footer{
+@media (min-width:320px){
+ footer{
     background-image: url("../assets/humo-blanco-sobre-fondo-negro_23-2147611843.jpg");
     display: flex;
     height: 200px;
@@ -153,14 +153,15 @@ footer{
     background-size:cover;
     background-repeat: no-repeat;
     background-position: center;
+    position: relative;
 
-}
-.final-titulo{
+ }
+ .final-titulo{
  color: whitesmoke;
 
 
-}
-.final-p{
+ }
+ .final-p{
     height: 120px;
     position: relative;
     display: flex;
@@ -168,20 +169,21 @@ footer{
     right: 250px;
     top: 55px;
     color: whitesmoke;
-}
-.h12{
+ }
+ .h12{
     position: relative;
     left: 500px;
     top: -60px;
-}
-.img{
+ }
+ .img{
     position: relative;
     height: 40px;
     top: 50px;
-}
-.img2{
+ }
+ .img2{
     position: relative;
     height: 40px;
     top: 50px;
     left: 10px;
+ }
 }
