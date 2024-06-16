@@ -176,6 +176,11 @@ footer{
     position: relative;
 
 }
+@media (min-width: 320px) and (max-width: 767px) {
+    footer{
+        width: 423px;
+    }
+}
 
 .final-titulo{
  color: whitesmoke;
