@@ -188,7 +188,7 @@ footer{
     position: relative;
     display: flex;
     flex-direction: column;
-    right: 250px;
+    right: 150px;
     top: 55px;
     color: whitesmoke;
 }
@@ -200,13 +200,13 @@ footer{
 .h12{
      top: -70px;
         position: relative;
-        left: 400px;
+        left: 300px;
         margin: auto;
     
 }
 @media (min-width: 320px) and (max-width: 767px) {
     .h12{
-        left: 300px;
+        left: 250px;
     }
        
 }   
