@@ -37,10 +37,9 @@ header img{
     box-shadow: 2px 2px 5px black;
 }
 .container{
-    align-items: center;
-    position: relative;
+   position: relative;
     right: 140px;
-    justify-content: center;
+    
 }
 
 form {
