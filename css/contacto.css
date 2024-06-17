@@ -14,10 +14,12 @@ header img{
     width: 100px;
     margin: 10px;
 }
+
 .navegacion {
     display: flex;
     justify-content: space-around;
 }
+
 .navegacion a {
     text-align: center;
     align-content: center;
@@ -29,6 +31,7 @@ header img{
     margin-top: 40px;
     padding: 6px;
 }
+
 .navegacion a:hover {
     color: blue;
     box-shadow: 2px 2px 5px black;
@@ -44,6 +47,7 @@ legend {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 20px;
+    color: darkblue;
 }
 
 .form-group {
