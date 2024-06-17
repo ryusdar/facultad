@@ -36,16 +36,13 @@ header img{
     color: blue;
     box-shadow: 2px 2px 5px black;
 }
-.container{
-   position: relative;
-    right: 140px;
-    
-}
+
 
 form {
     box-shadow: 2px 2px 5px black;
     max-width: 70%;
     margin: 0 auto;
+    
 }
 
 legend {
