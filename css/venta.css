@@ -38,42 +38,84 @@ header img{
 
 
 }
-.tarjeta {
+
+#success_message{ display: none;}
+
+footer {
+    background-image: url("../assets/humo-blanco-sobre-fondo-negro_23-2147611843.jpg");
     display: flex;
-    justify-content: center;
+    height: 200px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+
+}
+
+
+
+.final-titulo {
+    color: whitesmoke;
+
+
+}
+
+.final-p {
+    height: 120px;
+    position: relative;
+    display: flex;
     flex-direction: column;
-    box-shadow: 2px 2px 5px black;
-    border-radius: 8px;
-    padding: 5px;
+    right: 150px;
+    top: 55px;
+    color: whitesmoke;
 }
 
-.tarjeta img {
-    width: 200px;
+@media (min-width: 320px) and (max-width: 767px) {
+    .final-p {
+        right: 150px;
+    }
 }
 
-.tarjeta p {
-    text-align: center;
+.h12 {
+    top: -70px;
+    position: relative;
+    left: 300px;
+    margin: auto;
+
 }
 
-.tarjeta a {
-    text-align: center;
+@media (min-width: 320px) and (max-width: 767px) {
+    .h12 {
+        left: 250px;
+    }
+
 }
 
-.contenedor-imagen {
-    display: flex;
-    justify-content: center;
+.img {
+    position: relative;
+    height: 40px;
+    top: 50px;
+    left: -100px;
 }
 
-.btn {
-    background-color: rgb(19, 18, 18);
-    border-radius: 12px;
-    padding: 4px;
-    margin-top: 10px;
-    text-decoration: none;
-    color: aliceblue;
-    width: 250px;
+@media (min-width: 320px) and (max-width: 767px) {
+    .img {
+        top: 90px;
+    }
+
 }
-.contenedor2{
- background-color: aliceblue;
+
+.img2 {
+    position: relative;
+    height: 40px;
+    top: 50px;
+    left: -90px;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .img2 {
+        top: 90px;
+    }
 
 }

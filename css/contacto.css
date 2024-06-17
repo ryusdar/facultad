@@ -14,5 +14,85 @@ header img{
     width: 100px;
     margin: 10px;
 }
+.navegacion {
+    display: flex;
+    justify-content: space-around;
+}
+.navegacion a {
+    text-align: center;
+    align-content: center;
+    color: rgb(20, 20, 20);
+    text-decoration: none;
+    font-weight: 700;
+    margin-right: 15px;
+    height: fit-content;
+    margin-top: 40px;
+    padding: 6px;
+}
+.navegacion a:hover {
+    color: blue;
+    box-shadow: 2px 2px 5px black;
+}
 
+form {
+    box-shadow: 2px 2px 5px black;
+    max-width: 70%;
+    margin: 0 auto;
+}
 
+legend {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.control-label {
+    font-weight: bold;
+}
+
+.inputGroupContainer {
+    position: relative;
+}
+
+.input-group-addon {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.selectContainer .input-group-addon {
+    
+    text-align: left;
+}
+
+.radio {
+    margin-top: 10px;
+}
+
+.alert-success {
+    margin-top: 20px;
+    display: none; /* Ocultar el mensaje de éxito por defecto */
+}
+.btn-warning {
+    background-color: #f0ad4e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-warning:hover {
+    background-color: #eea236;
+}

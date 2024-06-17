@@ -1,38 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de contacto</title>
     <link rel="stylesheet" href="../css/contacto.css">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
+   
 </head>
+
 <body>
     <header>
-        <header>
-            <a href="../index.html">
-                <img src="../assets/captura.png" alt="">
-            </a>
-    
-        </header>
+        <a href="../index.html">
+            <img src="../assets/captura.png" alt="">
+        </a>
+        <div class="navegacion">
+            <a href="../templates/producto2.html">alquiler</a>
+            <a href="../templates/venta.html">venta</a>
+        </div>
     </header>
     <main>
-        <h2>Formulario de contacto</h2>
-    <form action="/procesar_formulario_contacto" method="post">
-        <label for="nombre_contacto">Nombre:</label><br>
-        <input type="text" id="nombre_contacto" name="nombre_contacto" required><br>
-        
-        <label for="email_contacto">Correo electrónico:</label><br>
-        <input type="email" id="email_contacto" name="email_contacto" required><br>
-        
-        <label for="telefono_contacto">Teléfono:</label><br>
-        <input type="tel" id="telefono_contacto" name="telefono_contacto" required><br>
-        
-        <label for="mensaje_contacto">Mensaje:</label><br>
-        <textarea id="mensaje_contacto" name="mensaje_contacto" rows="4" cols="50" required></textarea><br>
-        
-        <input type="submit" value="Enviar">
-    </form>
+        <div class="container">
+            <form class="well form-horizontal" action="" method="post" id="contact_form">
+                <fieldset>
+                    <!-- Form Name -->
+                    <legend>¡Contáctanos!</legend>
+
+                    <!-- Text input -->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">Nombre</label>
+                        <div class="col-md-4 inputGroupContainer">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                <input name="first_name" placeholder="Nombre" class="form-control" type="text">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Text input -->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">Apellido</label>
+                        <div class="col-md-4 inputGroupContainer">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                <input name="last_name" placeholder="Apellido" class="form-control" type="text">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Email input -->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">E-Mail</label>
+                        <div class="col-md-4 inputGroupContainer">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                                <input name="email" placeholder="Correo electrónico" class="form-control" type="text">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Phone input -->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">Número de teléfono</label>
+                        <div class="col-md-4 inputGroupContainer">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+                                <input name="phone" placeholder="(54)261-555-1212" class="form-control" type="text">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Select dropdown for location -->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">Ubicación</label>
+                        <div class="col-md-4 selectContainer">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+                                <select name="state" class="form-control selectpicker">
+                                    <option value="">Por favor selecciona tu pais</option>
+                                    <option>Argentina</option>
+                                    <option>Bolivia</option>
+                                    <option>Brasil</option>
+                                    <option>Chile</option>
+                                    <option>Colombia</option>
+                                    <option>Costa Rica</option>
+                                    <option>Cuba</option>
+                                    <option>Ecuador</option>
+                                    <option>El Salvador</option>
+                                    <option>Guatemala</option>
+                                    <option>Honduras</option>
+                                    <option>México</option>
+                                    <option>Nicaragua</option>
+                                    <option>Panamá</option>
+                                    <option>Paraguay</option>
+                                    <option>Perú</option>
+                                    <option>Puerto Rico</option>
+                                    <option>República Dominicana</option>
+                                    <option>Uruguay</option>
+                                    <option>Venezuela</option>
+
+                                    <!-- Más opciones aquí -->
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Radio buttons for communication -->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">¿Se comunica para vender?</label>
+                        <div class="col-md-4">
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="hosting" value="yes"> Sí
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="hosting" value="no"> No
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Textarea for message -->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">¿Por qué nos contactas?</label>
+                        <div class="col-md-4 inputGroupContainer">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                                <textarea class="form-control" name="comment"
+                                    placeholder="Descripción del proyecto"></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Success message -->
+                    <div class="alert alert-success" role="alert" id="success_message">
+                        ¡Éxito! <i class="glyphicon glyphicon-thumbs-up"></i> Gracias por contactarnos, nos pondremos en
+                        contacto contigo pronto.
+                    </div>
+
+                    <!-- Button -->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label"></label>
+                        <div class="col-md-4">
+                            <button type="submit" class="btn btn-warning">Enviar <span
+                                    class="glyphicon glyphicon-send"></span></button>
+                        </div>
+                    </div>
+
+                </fieldset>
+            </form>
+        </div><!-- /.container -->
     </main>
+    <script src="../js/contacto.js"></script>
 </body>
+
 </html>
