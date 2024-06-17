@@ -40,7 +40,70 @@ header img{
 }
 
 #success_message{ display: none;}
+form {
+    box-shadow: 1px 14px 5px 5px black;
+    max-width: 70%;
+    margin: 0 auto;
+    
+}
 
+legend {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: darkblue;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.control-label {
+    font-weight: bold;
+}
+
+.inputGroupContainer {
+    position: relative;
+}
+
+.input-group-addon {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.selectContainer .input-group-addon {
+    
+    text-align: left;
+}
+
+.radio {
+    margin-top: 10px;
+}
+
+.alert-success {
+    margin-top: 20px;
+    display: none; /* Ocultar el mensaje de éxito por defecto */
+}
+.btn-warning {
+    background-color: #f0ad4e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-warning:hover {
+    background-color: #eea236;
+}
 footer {
     background-image: url("../assets/humo-blanco-sobre-fondo-negro_23-2147611843.jpg");
     display: flex;
