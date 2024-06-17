@@ -10,18 +10,19 @@ header {
     background-color: whitesmoke;
     box-shadow: 2px 2px 5px black;
 
- 
+
 
 }
-@media (min-width:320px){
+
+@media (min-width:320px) {
     header {
         display: flex;
         justify-content: space-between;
         background-color: whitesmoke;
         box-shadow: 2px 2px 5px black;
     }
-  }
-    
+}
+
 
 header img {
     width: 100px;
@@ -49,22 +50,26 @@ header img {
     color: blue;
     box-shadow: 2px 2px 5px black;
 }
- 
+
 .contenedor-tarjetas {
     display: flex;
-    justify-content: space-between; /* Coloca las tarjetas una al lado de la otra */
-    margin-top: 20px; /* Espacio entre las tarjetas */
+    justify-content: space-between;
+    /* Coloca las tarjetas una al lado de la otra */
+    margin-top: 20px;
+    /* Espacio entre las tarjetas */
     flex-wrap: wrap;
 }
 
 .tarjeta {
-    flex: 0 1 calc(50% - 10px); /* Establece el ancho de cada tarjeta, con un margen de 10px entre ellas */
+    flex: 0 1 calc(50% - 10px);
+    /* Establece el ancho de cada tarjeta, con un margen de 10px entre ellas */
     display: flex;
     flex-direction: column;
     box-shadow: 2px 2px 5px black;
     border-radius: 8px;
     padding: 5px;
-    margin: 5px; /* Espacio entre las tarjetas */
+    margin: 5px;
+    /* Espacio entre las tarjetas */
     text-align: justify;
 }
 
@@ -72,9 +77,6 @@ header img {
     width: 300px;
 }
 
-.tarjeta p {
-    text-align: center;
-}
 
 .tarjeta a {
     text-align: center;
@@ -85,62 +87,87 @@ header img {
     display: flex;
     height: 490px;
     width: 100%;
-    background-size:cover;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 
 }
-.precio{
- position: absolute;
- color: black;
- text-decoration: underline;
- text-shadow: 0px -1px 2px black;
+
+.precio {
+    position: relative;
+    top: -300px;
+    left: 390px;
+    color: black;
+    text-decoration: underline;
+    text-shadow: 0px -1px 2px black;
+    margin: auto;
 }
 
-@media (min-width:320px){
-    .precio{
+@media (min-width: 320px) and (max-width: 767px) {
+    .precio {
         color: black;
-     position: relative;
-     top: -300px;
-     left: 110px;
-     text-decoration: underline;
-     text-shadow: 0px -1px 2px black;
+        position: relative;
+        top: -300px;
+        left: 110px;
+        text-decoration: underline;
+        text-shadow: 0px -1px 2px black;
     }
 }
-.precio2{
+
+
+.precio2 {
     color: black;
     position: relative;
     top: -300px;
-    left: 150px;
+    left: 390px;
     text-decoration: underline;
     text-shadow: 0px -1px 2px rgb(143, 139, 139);
-    
-   }
-   @media (min-width:320px){
-    .precio2{
+
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .precio2 {
         color: black;
         position: relative;
-     top: -300px;
-     left: 110px;
-     text-decoration: underline;
-     text-shadow: 0px -1px 2px black;
+        top: -300px;
+        left: 110px;
+        text-decoration: underline;
+        text-shadow: 0px -1px 2px black;
     }
 }
-.h1{
+
+.h1 {
     position: relative;
     top: -50px;
 }
-.imagen-texto{
-  justify-content: 100%;
+
+.h2 {
+    position: relative;
+    top: -30px;
 
 }
-.info{
+
+.imagen-texto {
+    justify-content: 100%;
+
+}
+
+.info1 {
     position: relative;
-    top: -40px;
+    top: -20px;
     text-align: start;
     font-family: math;
 
 }
+
+.info2 {
+    position: relative;
+    top: -50px;
+    text-align: start;
+    font-family: math;
+
+}
+
 .btn2 {
     background-color: rgb(19, 18, 18);
     border-radius: 12px;
@@ -149,8 +176,9 @@ header img {
     text-decoration: none;
     color: aliceblue;
     margin: auto;
-    
+
 }
+
 .btn1 {
     background-color: rgb(19, 18, 18);
     border-radius: 12px;
@@ -159,36 +187,38 @@ header img {
     text-decoration: none;
     color: aliceblue;
     margin: auto;
-    
+
 }
 
-.contenedor2{
+.contenedor2 {
     background-color: aliceblue;
 }
-footer{
+
+footer {
     background-image: url("../assets/humo-blanco-sobre-fondo-negro_23-2147611843.jpg");
     display: flex;
     height: 200px;
     width: 100%;
-    background-size:cover;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
 
 }
+
 @media (min-width: 320px) and (max-width: 767px) {
-    footer{
+    footer {
         width: 423px;
     }
 }
 
-.final-titulo{
- color: whitesmoke;
+.final-titulo {
+    color: whitesmoke;
 
 
 }
 
-.final-p{
+.final-p {
     height: 120px;
     position: relative;
     display: flex;
@@ -197,46 +227,52 @@ footer{
     top: 55px;
     color: whitesmoke;
 }
+
 @media (min-width: 320px) and (max-width: 767px) {
-    .final-p{
+    .final-p {
         right: 150px;
     }
 }
-.h12{
-     top: -70px;
-        position: relative;
-        left: 300px;
-        margin: auto;
-    
+
+.h12 {
+    top: -70px;
+    position: relative;
+    left: 300px;
+    margin: auto;
+
 }
+
 @media (min-width: 320px) and (max-width: 767px) {
-    .h12{
+    .h12 {
         left: 250px;
     }
-       
-}   
-.img{
+
+}
+
+.img {
     position: relative;
     height: 40px;
     top: 50px;
     left: -100px;
 }
+
 @media (min-width: 320px) and (max-width: 767px) {
-    .img{
+    .img {
         top: 90px;
     }
-       
-}   
- 
-.img2{
- position: relative;
-  height: 40px;
-  top: 50px;
-  left: -90px;
+
 }
+
+.img2 {
+    position: relative;
+    height: 40px;
+    top: 50px;
+    left: -90px;
+}
+
 @media (min-width: 320px) and (max-width: 767px) {
-    .img2{
+    .img2 {
         top: 90px;
     }
-       
-}   
+
+}
