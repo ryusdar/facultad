@@ -93,9 +93,11 @@ header img {
 }
 
 .precio {
+    display: flex;
+    justify-content: right;
     position: relative;
     top: -300px;
-    left: 80%;
+    left: -50px;
     color: black;
     text-decoration: underline;
     text-shadow: 0px -1px 2px black;
@@ -104,10 +106,12 @@ header img {
 
 @media (min-width: 320px) and (max-width: 1050px) {
     .precio {
+        display: flex;
+        justify-content: center;
         color: black;
         position: relative;
         top: -300px;
-        left: 110px;
+        left: -50px;
         text-decoration: underline;
         text-shadow: 0px -1px 2px black;
     }
@@ -134,7 +138,29 @@ header img {
         text-shadow: 0px -1px 2px black;
     }
 }
+.precio3 {
+    display: flex;
+    justify-content: right;
+    color: black;
+    position: relative;
+    top: -300px;
+    text-decoration: underline;
+    text-shadow: 0px -1px 2px rgb(143, 139, 139);
 
+}
+
+@media (min-width: 320px) and (max-width: 1050px) {
+    .precio3 {
+        
+        justify-content: right;
+        display: flex;
+        color: black;
+        position: relative;
+        top: -350px;
+        text-decoration: underline;
+        text-shadow: 0px -1px 2px black;
+    }
+}
 .h1 {
     position: relative;
     top: -50px;
@@ -145,7 +171,10 @@ header img {
     top: -30px;
 
 }
-
+.h33{
+    position: relative;
+    top: -30px;
+}
 .imagen-texto {
     justify-content: 100%;
 
