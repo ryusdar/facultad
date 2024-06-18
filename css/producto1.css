@@ -1,3 +1,58 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0 auto;
+    background-color: grey;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: whitesmoke;
+    box-shadow: 2px 2px 5px black;
+
+
+
+}
+
+@media (min-width:320px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        background-color: whitesmoke;
+        box-shadow: 2px 2px 5px black;
+    }
+}
+
+
+header img {
+    width: 100px;
+    margin: 20px;
+}
+
+.navegacion {
+    display: flex;
+    justify-content: space-around;
+}
+
+.navegacion a {
+    text-align: center;
+    align-content: center;
+    color: rgb(20, 20, 20);
+    text-decoration: none;
+    font-weight: 700;
+    margin-right: 15px;
+    height: fit-content;
+    margin-top: 40px;
+    padding: 6px;
+}
+
+.navegacion a:hover {
+    color: blue;
+    box-shadow: 2px 2px 5px black;
+}
+
+
+
 footer {
     background-image: url("../assets/humo-blanco-sobre-fondo-negro_23-2147611843.jpg");
     display: flex;
