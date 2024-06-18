@@ -19,7 +19,7 @@ header {
         display: flex;
         justify-content: space-between;
         background-color: whitesmoke;
-        box-shadow: 1px 14px 5px 5px black;
+        box-shadow: 3px -3px 5px 5px black;
     }
 }
 
