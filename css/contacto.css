@@ -154,29 +154,33 @@ footer {
 }
 
 .img {
-    position: relative;
+    display: flex;
     height: 40px;
+    left: -80px;
+    position: relative;
     top: 50px;
-    left: -100px;
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
     .img {
-        top: 90px;
+        top: 50px;
+        left: -120px;
     }
 
 }
 
 .img2 {
-    position: relative;
+    display: flex;
     height: 40px;
+    left: -80px;
+    position: relative;
     top: 50px;
-    left: -90px;
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
     .img2 {
-        top: 90px;
+        top: 50px;
+        left: -120px;
     }
 
 }
