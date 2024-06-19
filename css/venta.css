@@ -14,10 +14,12 @@ header img{
     width: 100px;
     margin: 20px;
 }
+
 .navegacion {
     display: flex;
     justify-content: space-around;
 }
+
 .navegacion a {
     text-align: center;
     align-content: center;
