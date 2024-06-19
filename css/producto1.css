@@ -168,9 +168,18 @@ background-color: #ccc;
     
 }
 .icono-departamento{
-    background-image: url("");
+    height: 50px;
 }
+.mobiliario{
+    height: 50px;
+}
+.abitaciones{
 
+    height: 50px;
+}
+.garaje{
+    height: 50px;
+}
 footer {
     background-image: url("../assets/humo-blanco-sobre-fondo-negro_23-2147611843.jpg");
     display: flex;
