@@ -180,6 +180,12 @@ background-color: #ccc;
 .garaje{
     height: 50px;
 }
+.metros_cubicos{
+    height: 50px;
+}
+.ambiente{
+    height: 50px;
+}
 footer {
     background-image: url("../assets/humo-blanco-sobre-fondo-negro_23-2147611843.jpg");
     display: flex;
