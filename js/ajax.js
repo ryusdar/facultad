@@ -16,6 +16,7 @@ function GetProductos() {
             for (var p in json) {
                 $lista.innerHTML += `
                 <h1>${p}</h1>`;
+                
                 //Segundo forEach ingresa a cada una de las llaves y toma todos los productos internos
                 json[p].forEach((el) => {
                     $lista.innerHTML += `
