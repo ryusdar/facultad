@@ -1,24 +1,25 @@
 {
   "departamentos": [
     {
-      "titulo": "Casa Palmares ",
-      "descripcion": "AM4 APU 3th Gen,AM4 Ryzen 3th Gen,AM4 Ryzen 4th Gen,AM4 APU 5000",
-      "precio": 73000,
-      "img": "img/A520M.jpg"
-    },
-    {
-      "titulo": "Casa Dalvian",
-      "descripcion": "AM4 APU 3th Gen,AM4 Ryzen 3th Gen,AM4 Ryzen 4th Gen,AM4 APU 5000",
-      "precio": 75800,
-      "img": "img/B450M.jpg"
+      "titulo": "Casa en Rosario",
+      "descripcion": "Departamento Interno de 3 dormitorios, con ingreso al amplio living comedor con cocina independiente quipada con alacena, bajomesada, cocina y preinstalacion de Lavarropas",
+      "precio": 1.500,
+      "img": "assets/FACHADAS-DE-CASAS-PEQUENAS5-1.jpg"
     }
   ],
   "casa": [
     {
-      "titulo": "Casa en Rosario",
-      "descripcion": "Monitor marca Apex 22 pulgadas",
-      "precio": 121000,
-      "img": "img/monitor_apex.jpg"
+      "titulo": "Casa Palmares ",
+      "descripcion": "Cuenta con una living comedor amplio con pisos plastificados, 2 dormitorios con uno en suite, otro baño completo y cocina con lavandería integrada. El balcón cerrado es frontal y amplio. Cuenta con una cochera con ingreso por portón automatico.",
+      "precio": 1200, 
+      "img": "assets/download_image_1717276249391.png"
+    },
+    {
+      "titulo": "Casa Dalvian",
+      "descripcion": "living comedor amplio  con pisos de parquet, chimenea y carpintería de aluminio, techos altos de madera, patio con quinco de madera y una picina de 15m , 2 habitaciones grandes y 2 pequeña con escritorio,muy luminos,Cocina con pisos porcelanato.",
+      "precio": 300.000,
+      "img": "assets/download_image_1717276319265.png"
     }
+    
   ]
 }

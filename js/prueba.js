@@ -10,23 +10,23 @@ const producto = {
 
 
 const jsonString = `{
-    "departamento": [
+    "casa": [
     { "titulo": "Casa Palmares", 
     "descripcion": "lsidfosdbnfobasdof",
-    "precio": "20000",
-    "img":"img/Auriculares.jpg"
+    "precio": "1200",
+    "img":"assets/download_image_1717276249391.png"
     },
     { "titulo": "Casa Dalvian", 
     "descripcion": "lsidfosdbnfobasdof",
-    "precio": "150000",
-    "img":"img/monitor.jpg"
+    "precio": "300.000",
+    "img":"assets/download_image_1717276319265.png"
     }
     ],
-    "casa":[
+    "departamento":[
     { "titulo": "Casa en Rosario", 
     "descripcion": "lsidfosdbnfobasdof",
-    "precio": "8000",
-    "img":"img/Teclado.jpg"
+    "precio": "1.500",
+    "img":"assets/FACHADAS-DE-CASAS-PEQUENAS5-1.jpg"
     }
     ]
 
