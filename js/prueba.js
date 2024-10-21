@@ -1,12 +1,12 @@
 let listado = document.getElementById('listado');
-/*
+
 const producto = {
     titutlo: 'Auriculares',
     descripcion: 'ANBVOISADBVIOSDFNVOSIDKNVOSNFV',
     precio: '20000',
     img: 'img/monitor.jpg'
 };
-*/
+
 
 
 const jsonString = `{
