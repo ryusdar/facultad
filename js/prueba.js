@@ -85,7 +85,7 @@ const productos = data.productos;
         }
     });
 
-    xhr.open("GET", 'datos.json');
+    xhr.open("GET", '../data/datos.json');
 
     xhr.send();
 })();
