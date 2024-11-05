@@ -99,17 +99,18 @@ function BuscarProductos() {
                 $lista.innerHTML += `
                 <h1>${cat}</h1>`;
                 json[cat].forEach((el) => {
-                    if (el.precio >= desde && el.precio <= hasta) { // Filtra productos entre 'desde' y 'hasta'
-                        console.log(el.precio);
+                    if (desde <= el.precio || hasta >= el.precio) {
+                        console.log(el.precio)
                         $lista.innerHTML += `
                         <div class="tarjeta">
-                            <img src="${el.img}" alt="">
-                            <h2>${el.titulo}</h2>
-                            <p>${el.descripcion}</p>
-                            <p>${el.precio}</p>
+                        <img src="${el.img}" alt="">
+                        <h2>${el.titulo}</h2>
+                        <p>${el.descripcion}</p>
+                        <p>${el.precio}</p>
                         </div>`;
+                    } else {
                     }
-                });  
+                });
             }
         } else {
             $lista.innerHTML = `
