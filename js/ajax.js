@@ -123,7 +123,7 @@ function BuscarProductos() {
         }
     });
 
-    xhr.open("GET", 'data/datos.json');
+    xhr.open("GET", '../data/datos.json');
 
     xhr.send();
 }
