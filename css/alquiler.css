@@ -58,17 +58,9 @@ header img {
     /* Espacio entre las tarjetas */
     flex-wrap: wrap;
 }
-.des{
-    position: relative;
+.container1{
     display: flex;
-    top: -25px;
-    left: 150px;
-}
-#desde{
-    position: relative;
-    display: flex;
-    top: -70px;
-    left: 200px;
+    box-shadow: 3px -3px 5px 5px black;
 }
 .tarjeta {
     flex: 0 1 calc(50% - 10px);
