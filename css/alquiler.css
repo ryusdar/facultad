@@ -89,6 +89,9 @@ header img {
     left: 510px;
     top: -75px;
 }
+.buscar{
+    
+}
 .tarjeta {
     flex: 0 1 calc(50% - 10px);
     /* Establece el ancho de cada tarjeta, con un margen de 10px entre ellas */
