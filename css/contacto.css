@@ -88,6 +88,7 @@ main {
     position: relative;
     display: flex;
     top: 25px;
+    left: 5px;
 }
  .a2{
     top: 5px;
