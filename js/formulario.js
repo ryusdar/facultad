@@ -57,34 +57,30 @@ inputs.forEach((input) => {
 const terminosNo = document.getElementById('terminos-no');
 
 formulario.addEventListener('submit', function(e) {
-    e.preventDefault(); // Previene el envío por defecto
-  
-    // Verificamos que todos los campos estén completos y que uno de los radio buttons esté seleccionado
-    if (
-      campos.nombre.value && 
-      campos.correo.value && 
-      campos.telefono.value && 
-      (terminosSi.checked || terminosNo.checked) // Verifica si uno de los dos radio buttons está marcado
-    ) {
-      // Si todo está bien, reseteamos el formulario
-      formulario.reset();
-  
-      // Mostrar el mensaje de éxito
-      document.getElementById('formulario__mensaje-exito').classList.add('formulario__mensaje-exito-activo');
-  
-      // Después de 5 segundos, ocultamos el mensaje de éxito
-      setTimeout(() => {
-        document.getElementById('formulario__mensaje-exito').classList.remove('formulario__mensaje-exito-activo');
-      }, 5000);
-  
-      // Limpiar los iconos de validación
-      document.querySelectorAll('.formulario__grupo-correcto').forEach((icono) => {
-        icono.classList.remove('formulario__grupo-correcto');
-      });
-  
-    } else {
-      // Si algún campo está vacío o no se ha seleccionado ninguna opción, mostramos el mensaje de error
-      document.getElementById('formulario__mensaje').classList.add('formulario__mensaje-activo');
-    }
-  });
-  
+  e.preventDefault(); // Previene el envío por defecto
+
+  // Verificamos que todos los campos estén completos y que uno de los radio buttons esté seleccionado
+  if (
+    campos.nombre.value &&
+    campos.correo.value &&
+    campos.telefono.value &&
+    (terminosSi.checked || terminosNo.checked) // Verifica si uno de los dos radio buttons está marcado
+  ) {
+    // Si todo está bien, reseteamos el formulario
+    formulario.reset();
+
+	if(campos.nombre  && campos.correo && campos.telefono && terminos.checked ){
+		formulario.reset();
+
+		document.getElementById('formulario__mensaje-exito').classList.add('formulario__mensaje-exito-activo');
+		setTimeout(() => {
+			document.getElementById('formulario__mensaje-exito').classList.remove('formulario__mensaje-exito-activo');
+		}, 5000);
+
+		document.querySelectorAll('.formulario__grupo-correcto').forEach((icono) => {
+			icono.classList.remove('formulario__grupo-correcto');
+		});
+	} else {
+		document.getElementById('formulario__mensaje').classList.add('formulario__mensaje-activo');
+    }	}
+});
