@@ -66,9 +66,9 @@ formulario.addEventListener('submit', (e) => {
 			document.getElementById('formulario__mensaje-exito').classList.remove('formulario__mensaje-exito-activo');
 		}, 5000);
 
-        document.getElementById('formulario__mensaje-incorrecto').classList.add('formulario__mensaje-incorrecto-activo')
+        document.getElementById('formulario__grupo-incorrecto').classList.add('formulario__validacion-estado')
 		setTimeout(() => {
-			document.getElementById('formulario__mensaje-incorrecto').classList.remove('formulario__mensaje-incorrecto-activo');
+			document.getElementById('formulario__grupo-incorrecto').classList.remove('formulario__validacion-estado');
 		}, 5000);
         document.querySelectorAll('.formulario__grupo-correcto').forEach((icono) => {
 			icono.classList.remove('formulario__grupo-correcto');
