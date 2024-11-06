@@ -67,9 +67,11 @@ header img {
 #desde{
     position: relative;
     display: flex;
-    left: 280px;
+    left: 490px;
 }
 .hasta{
+    width: 60px;
+    border: solid black;
     position: relative;
     top: -30px;
 }
