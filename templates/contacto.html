@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario de contacto</title>
+    <title>Formulario de Registro</title>
     <link rel="icon" href="../assets/Captura.ico">
     <link rel="stylesheet" href="../css/contacto.css">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <script src="../js/contacto.js"></script>
+    <link rel="stylesheet" href="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous">
 </head>
 
 <body>
@@ -21,164 +21,124 @@
             <a href="../templates/venta.html">venta</a>
         </div>
     </header>
+
     <main>
         <div class="container">
             <form class="formulario" action="" method="post" id="formulario">
                 <fieldset>
-                    <!-- Form Name -->
-                    <legend>Formulario de Consulta</legend>
+                    <legend>Formulario de Registro</legend>
 
-                    <!-- Text input -->
-                    <div class="form-group">
-                        <label class="col-md-4 control-label">Nombre</label>
-                        <div class="col-md-4 inputGroupContainer">
-                            <div class="input-group">
-                                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                <input name="first_name" placeholder="Nombre" class="form-control" type="text">
-                            </div>
+                    <!-- Grupo: Usuario -->
+                    <div class="formulario__grupo" id="grupo__usuario">
+                        <label for="usuario" class="formulario__label">Usuario</label>
+                        <div class="formulario__grupo-input">
+                            <input type="text" class="formulario__input" name="usuario" id="usuario" placeholder="john123">
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
                         </div>
+                        <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener números, letras y guion bajo.</p>
                     </div>
 
-                    <!-- Text input -->
-                    <div class="form-group">
-                        <label class="col-md-4 control-label">Apellido</label>
-                        <div class="col-md-4 inputGroupContainer">
-                            <div class="input-group">
-                                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                <input name="last_name" placeholder="Apellido" class="form-control" type="text">
-                            </div>
+                    <!-- Grupo: Nombre -->
+                    <div class="formulario__grupo" id="grupo__nombre">
+                        <label for="nombre" class="formulario__label">Nombre</label>
+                        <div class="formulario__grupo-input">
+                            <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="John Doe">
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
                         </div>
+                        <p class="formulario__input-error">El nombre no puede estar vacío.</p>
                     </div>
 
-                    <!-- Email input -->
-                    <div class="form-group">
-                        <label class="col-md-4 control-label">E-Mail</label>
-                        <div class="col-md-4 inputGroupContainer">
-                            <div class="input-group">
-                                <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-                                <input name="email" placeholder="Correo electrónico" class="form-control" type="text">
-                            </div>
+                    <!-- Grupo: Apellido -->
+                    <div class="formulario__grupo" id="grupo__apellido">
+                        <label for="apellido" class="formulario__label">Apellido</label>
+                        <div class="formulario__grupo-input">
+                            <input type="text" class="formulario__input" name="apellido" id="apellido" placeholder="Doe">
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
                         </div>
+                        <p class="formulario__input-error">El apellido no puede estar vacío.</p>
                     </div>
 
-                    <!-- Phone input -->
-                    <div class="form-group">
-                        <label class="col-md-4 control-label">Número de teléfono</label>
-                        <div class="col-md-4 inputGroupContainer">
-                            <div class="input-group">
-                                <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-                                <input name="phone" placeholder="(54)261-555-1212" class="form-control" type="text">
-                            </div>
+                    <!-- Grupo: Contraseña -->
+                    <div class="formulario__grupo" id="grupo__password">
+                        <label for="password" class="formulario__label">Contraseña</label>
+                        <div class="formulario__grupo-input">
+                            <input type="password" class="formulario__input" name="password" id="password">
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
                         </div>
+                        <p class="formulario__input-error">La contraseña tiene que ser de 4 a 12 dígitos.</p>
                     </div>
 
-                    <!-- Select dropdown for location -->
-                    <div class="form-group">
-                        <label class="col-md-4 control-label">Ubicación</label>
-                        <div class="col-md-4 selectContainer">
-                            <div class="input-group">
-                                <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
-                                <select name="state" class="form-control selectpicker">
-                                    <option value="">Por favor selecciona tu pais</option>
-                                    <option>Argentina</option>
-                                    <option>Bolivia</option>
-                                    <option>Brasil</option>
-                                    <option>Chile</option>
-                                    <option>Colombia</option>
-                                    <option>Costa Rica</option>
-                                    <option>Cuba</option>
-                                    <option>Ecuador</option>
-                                    <option>El Salvador</option>
-                                    <option>Guatemala</option>
-                                    <option>Honduras</option>
-                                    <option>México</option>
-                                    <option>Nicaragua</option>
-                                    <option>Panamá</option>
-                                    <option>Paraguay</option>
-                                    <option>Perú</option>
-                                    <option>Puerto Rico</option>
-                                    <option>República Dominicana</option>
-                                    <option>Uruguay</option>
-                                    <option>Venezuela</option>
-
-                                    <!-- Más opciones aquí -->
-                                </select>
-                            </div>
+                    <!-- Grupo: Repetir Contraseña -->
+                    <div class="formulario__grupo" id="grupo__password2">
+                        <label for="password2" class="formulario__label">Repetir Contraseña</label>
+                        <div class="formulario__grupo-input">
+                            <input type="password" class="formulario__input" name="password2" id="password2">
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
                         </div>
+                        <p class="formulario__input-error">Ambas contraseñas deben ser iguales.</p>
                     </div>
 
-                    <!-- Radio buttons for communication -->
-                   
-
-                    <!-- Textarea for message -->
-                    <div class="form-group" id ="formulario">
-                        <label class="col-md-4 control-label">¿Por qué nos contactas?</label>
-                        <div class="col-md-4 inputGroupContainer">
-                            <div class="input-group">
-                                <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
-                                <textarea class="form-control" name="comment"
-                                    placeholder="Descripción del proyecto"></textarea>
-                            </div>
+                    <!-- Grupo: Correo Electrónico -->
+                    <div class="formulario__grupo" id="grupo__correo">
+                        <label for="correo" class="formulario__label">Correo Electrónico</label>
+                        <div class="formulario__grupo-input">
+                            <input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com">
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
                         </div>
+                        <p class="formulario__input-error">El correo solo puede contener letras, números, puntos, guiones y guion bajo.</p>
                     </div>
 
-                    <div class="form-group">
-                        <label class="col-md-4 control-label">¿fue facil usar la pagina?</label>
-                        <div class="col-md-4">
-                            <div class="radio">
-                                <label>
-                                    <input type="radio" name="hosting" value="yes"> Sí
-                                </label>
-                            </div>
-                            <div class="radio">
-                                <label>
-                                    <input type="radio" name="hosting" value="no"> No
-                                </label>
-                            </div>
+                    <!-- Grupo: Teléfono -->
+                    <div class="formulario__grupo" id="grupo__telefono">
+                        <label for="telefono" class="formulario__label">Teléfono</label>
+                        <div class="formulario__grupo-input">
+                            <input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="4491234567">
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
                         </div>
+                        <p class="formulario__input-error">El teléfono solo puede contener números y el máximo son 14 dígitos.</p>
                     </div>
+
+                    <!-- Grupo: Terminos y Condiciones -->
+                    <div class="formulario__grupo" id="grupo__terminos">
+                        <label class="formulario__label">
+                            <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+                            Acepto los Términos y Condiciones
+                        </label>
+                    </div>
+
                     <!-- Success message -->
                     <div class="alert alert-success" role="alert" id="success_message">
-                        ¡Éxito! <i class="glyphicon glyphicon-thumbs-up"></i> Gracias por contactarnos, nos pondremos en
-                        contacto contigo pronto.
+                        ¡Éxito! Gracias por registrarte, nos pondremos en contacto contigo pronto.
                     </div>
 
-                    <!-- Button -->
-                    <div class="form-group">
-                        <label class="col-md-4 control-label"></label>
-                        <div class="col-md-4">
-                            <a href="../templates/contacto.html">
-                                <button type="button" class="btn btn-warning">Enviar <span class="glyphicon glyphicon-send"></span></button>
-                            </a>
-                        </div>
+                    <!-- Submit button -->
+                    <div class="formulario__grupo formulario__grupo-btn-enviar">
+                        <button type="submit" class="formulario__btn">Enviar</button>
+                        <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
                     </div>
-
                 </fieldset>
             </form>
-        </div><!-- /.container -->
-        <script src="../js/contacto.js"></script>
-        
+        </div>
     </main>
+
     <footer>
         <div class="final-titulo">
-         <h1>Contacto</h1>
-         <h1 class="h12"> seguinos </h1>
-
+            <h1>Contacto</h1>
+            <h1 class="h12">Síguenos</h1>
         </div>
-        
         <div class="final-p">
             <p>tel: 2616412794</p>
-            <p>gmail:juanmaruizrighi@gmail.com</p>
+            <p>gmail: juanmaruizrighi@gmail.com</p>
         </div>
         <a class="img" href="">
-            <img  src="../utilities/whatsapp-svgrepo-com.svg" alt=" whatsapp-svgrepo-com">
+            <img src="../utilities/whatsapp-svgrepo-com.svg" alt="whatsapp">
         </a>
-
-          <a class="img2" href="https://www.instagram.com/juanba135/">
-            <img  src="../utilities/instagram-1-svgrepo-com.svg" alt="instagram-1">
+        <a class="img2" href="https://www.instagram.com/juanba135/">
+            <img src="../utilities/instagram-1-svgrepo-com.svg" alt="instagram-1">
         </a>
-       
     </footer>
-   <script src="../js/formulario.js"></script>
+
+    <script src="../js/formulario.js"></script>
+</body>
 
 </html>
