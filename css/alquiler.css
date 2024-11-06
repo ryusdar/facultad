@@ -90,7 +90,9 @@ header img {
     top: -75px;
 }
 .buscar{
-    
+    left: 550px;
+    position: relative;
+    top: -75px;
 }
 .tarjeta {
     flex: 0 1 calc(50% - 10px);
