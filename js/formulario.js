@@ -55,8 +55,34 @@ inputs.forEach((input) => {
 formulario.addEventListener('submit', (e) => {
 	e.preventDefault();
 
-	const terminos = document.getElementById('terminos') 
-    
+	const terminos = document.getElementById('terminos');
+const inputPassword1 = document.getElementById('terminos-si');
+const inputPassword2 = document.getElementById('terminos-no');
+const submitBtn = document.getElementById('submitBtn');
+const mensaje = document.getElementById('mensaje');
+
+// Función para manejar la acción del usuario
+function handleAgreement() {
+    // Verificar si cualquiera de las opciones fue seleccionada
+    if (inputPassword1.checked || inputPassword2.checked) {
+        mensaje.textContent = 'Has seleccionado una opción.';
+    } else {
+        mensaje.textContent = 'Por favor selecciona una opción.';
+    }
+}
+
+// Evento que detecta cuando el usuario hace una selección
+inputPassword1.addEventListener('change', handleAgreement);
+inputPassword2.addEventListener('change', handleAgreement);
+
+// Evento para el checkbox, si el checkbox se activa puedes marcar que aceptó los términos
+terminos.addEventListener('change', function() {
+    if (terminos.checked) {
+        mensaje.textContent = 'Has aceptado los términos y condiciones.';
+    } else {
+        mensaje.textContent = 'No has aceptado los términos y condiciones.';
+    }
+});
 	if(campos.nombre  && campos.correo && campos.telefono && terminos.checked ){
 		formulario.reset();
 
