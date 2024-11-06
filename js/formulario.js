@@ -9,6 +9,7 @@ const expresiones = {
 	telefono: /^\d{7,14}$/ // 7 a 14 numeros.
 }
 
+formulario.addEventListener('submit',()=> {} )
 const campos = {
 	usuario: false,
 	nombre: false,
