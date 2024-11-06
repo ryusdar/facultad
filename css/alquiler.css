@@ -78,6 +78,11 @@ header img {
     top: -30px;
     left: 430px;
 }
+#hasta{
+    position: relative;
+    left: 510px;
+    top: -75px;
+}
 .tarjeta {
     flex: 0 1 calc(50% - 10px);
     /* Establece el ancho de cada tarjeta, con un margen de 10px entre ellas */
