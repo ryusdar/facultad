@@ -55,7 +55,7 @@ inputs.forEach((input) => {
 formulario.addEventListener('submit', (e) => {
 	e.preventDefault();
 
-	const terminos = document.getElementById('terminos-si' && "terminos-no") 
+	const terminos = document.getElementById('terminos-si' || "terminos-no") 
 	if(campos.nombre  && campos.correo && campos.telefono && terminos.checked ){
 		formulario.reset();
 
