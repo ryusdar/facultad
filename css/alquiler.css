@@ -58,6 +58,12 @@ header img {
     /* Espacio entre las tarjetas */
     flex-wrap: wrap;
 }
+#categoria{
+    position: relative;
+    left: 260px;
+    top: 75px;
+
+}
 .des{
     position: relative;
     display: flex;
