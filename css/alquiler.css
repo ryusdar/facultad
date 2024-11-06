@@ -70,7 +70,8 @@ header img {
     left: 280px;
 }
 .hasta{
-    
+    position: relative;
+    top: -30px;
 }
 .tarjeta {
     flex: 0 1 calc(50% - 10px);
