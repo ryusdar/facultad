@@ -48,4 +48,6 @@ formulario.addEventListener('submit', (e) => {
             document.getElementById('formulario__mensaje-exito').classList.remove('formulario__mensaje-exito-activo');
         }, 5000);
     } else {
-        document.getElementById('formulario__mensaje').classList.add('
+        document.getElementById('formulario__mensaje').classList.add('formulario__mensaje-activo');
+    }
+});
