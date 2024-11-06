@@ -84,7 +84,16 @@ main {
     display: flex;
     top: -20px;
 }
-
+.formulario__checkbox-si{
+    position: relative;
+    display: flex;
+    top: 25px;
+}
+ .a2{
+    top: 5px;
+    left: 20px;
+    position: relative;
+ }
 .formulario__input-error {
 	font-size: 12px;
 	margin-bottom: 0;
