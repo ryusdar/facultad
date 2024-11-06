@@ -52,23 +52,10 @@ inputs.forEach((input) => {
 	input.addEventListener('blur', validarFormulario);
 });
 
+formulario.addEventListener('submit', (e) => {
+	e.preventDefault();
 
-    const terminosSi = document.getElementById('terminos-si');
-const terminosNo = document.getElementById('terminos-no');
-
-formulario.addEventListener('submit', function(e) {
-  e.preventDefault(); // Previene el envío por defecto
-
-  // Verificamos que todos los campos estén completos y que uno de los radio buttons esté seleccionado
-  if (
-    campos.nombre.value &&
-    campos.correo.value &&
-    campos.telefono.value &&
-    (terminosSi.checked || terminosNo.checked) // Verifica si uno de los dos radio buttons está marcado
-  ) {
-    // Si todo está bien, reseteamos el formulario
-    formulario.reset();
-
+	const terminos = document.getElementById('terminos-si' && "terminos-no") 
 	if(campos.nombre  && campos.correo && campos.telefono && terminos.checked ){
 		formulario.reset();
 
@@ -82,5 +69,5 @@ formulario.addEventListener('submit', function(e) {
 		});
 	} else {
 		document.getElementById('formulario__mensaje').classList.add('formulario__mensaje-activo');
-    }	}
+	}
 });
