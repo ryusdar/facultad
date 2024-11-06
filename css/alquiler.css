@@ -67,8 +67,8 @@ header img {
 #desde{
     position: relative;
     display: flex;
-    top: -70px;
-    left: 200px;
+    
+    left: 280px;
 }
 .tarjeta {
     flex: 0 1 calc(50% - 10px);
