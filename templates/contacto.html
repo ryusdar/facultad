@@ -8,178 +8,134 @@
     <link rel="icon" href="../assets/Captura.ico">
     <link rel="stylesheet" href="../css/contacto.css">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
-    
 </head>
 
 <body>
     <header>
         <a href="../index.html">
-            <img src="../assets/Captura.PNG" alt="">
+            <img src="../assets/Captura.PNG" alt="Logo">
         </a>
         <div class="navegacion">
-            <a href="../templates/alquiler.html">alquiler</a>
-            <a href="../templates/venta.html">venta</a>
+            <a href="../templates/alquiler.html">Alquiler</a>
+            <a href="../templates/venta.html">Venta</a>
         </div>
     </header>
+    
     <main>
         <div class="container">
-            <form class="formulario" action="" method="post" id="formulario">
+            <form class="formulario" id="formulario" action="" method="post">
                 <fieldset>
                     <!-- Form Name -->
                     <legend>Formulario de Consulta</legend>
 
-                    <!-- Text input -->
+                    <!-- Nombre input -->
                     <div class="form-group" id="grupo__usuario">
-                        <label class="col-md-4 control-label" for="usuario">Nombre</label>
-                        <div class="col-md-4 inputGroupContainer" >
-                            <div class="input-group">
-                                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                <input name="usuario" placeholder="Nombre" class="form-control" type="text" id="usuario">
-                            </div>
+                        <label for="usuario">Nombre</label>
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                            <input name="usuario" placeholder="Nombre" class="form-control" type="text" id="usuario">
                         </div>
-                        <p class="formulario__input-error">ingrese su Nombre</p>
+                        <p class="formulario__input-error">Por favor, ingrese su nombre.</p>
                     </div>
 
-                    <!-- Text input -->
-                    <div class="form-group">
-                        <label class="col-md-4 control-label">Apellido</label>
-                        <div class="col-md-4 inputGroupContainer">
-                            <div class="input-group">
-                                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                <input name="last_name" placeholder="Apellido" class="form-control" type="text">
-                            </div>
+                    <!-- Apellido input -->
+                    <div class="form-group" id="grupo__apellido">
+                        <label for="last_name">Apellido</label>
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                            <input name="last_name" placeholder="Apellido" class="form-control" type="text" id="last_name">
                         </div>
+                        <p class="formulario__input-error">Por favor, ingrese su apellido.</p>
                     </div>
 
                     <!-- Email input -->
+                    <div class="form-group" id="grupo__correo">
+                        <label for="email">E-Mail</label>
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                            <input name="email" placeholder="Correo electrónico" class="form-control" type="email" id="email">
+                        </div>
+                        <p class="formulario__input-error">Por favor, ingrese un correo válido.</p>
+                    </div>
+
+                    <!-- Teléfono input -->
+                    <div class="form-group" id="grupo__telefono">
+                        <label for="phone">Número de teléfono</label>
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+                            <input name="phone" placeholder="(54)261-555-1212" class="form-control" type="text" id="phone">
+                        </div>
+                        <p class="formulario__input-error">Por favor, ingrese un número válido.</p>
+                    </div>
+
+                    <!-- Select dropdown -->
                     <div class="form-group">
-                        <label class="col-md-4 control-label">E-Mail</label>
-                        <div class="col-md-4 inputGroupContainer">
-                            <div class="input-group">
-                                <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-                                <input name="email" placeholder="Correo electrónico" class="form-control" type="text">
-                            </div>
+                        <label for="state">Ubicación</label>
+                        <div class="input-group">
+                            <select name="state" id="state" class="form-control selectpicker">
+                                <option value="">Seleccione su país</option>
+                                <!-- Opciones de países -->
+                                <option>Argentina</option>
+                                <option>Bolivia</option>
+                                <option>Brasil</option>
+                                <option>Chile</option>
+                                <!-- Más opciones -->
+                            </select>
                         </div>
                     </div>
 
-                    <!-- Phone input -->
+                    <!-- Mensaje textarea -->
                     <div class="form-group">
-                        <label class="col-md-4 control-label">Número de teléfono</label>
-                        <div class="col-md-4 inputGroupContainer">
-                            <div class="input-group">
-                                <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-                                <input name="phone" placeholder="(54)261-555-1212" class="form-control" type="text">
-                            </div>
+                        <label for="comment">¿Por qué nos contactas?</label>
+                        <textarea class="form-control" name="comment" id="comment" placeholder="Descripción del proyecto"></textarea>
+                    </div>
+
+                    <!-- Radio buttons -->
+                    <div class="form-group">
+                        <label>¿Fue fácil usar la página?</label>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="easy_use" value="yes"> Sí
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="easy_use" value="no"> No
+                            </label>
                         </div>
                     </div>
 
-                    <!-- Select dropdown for location -->
+                    <!-- Enviar button -->
                     <div class="form-group">
-                        <label class="col-md-4 control-label">Ubicación</label>
-                        <div class="col-md-4 selectContainer">
-                            <div class="input-group">
-                                <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
-                                <select name="state" class="form-control selectpicker">
-                                    <option value="">Por favor selecciona tu pais</option>
-                                    <option>Argentina</option>
-                                    <option>Bolivia</option>
-                                    <option>Brasil</option>
-                                    <option>Chile</option>
-                                    <option>Colombia</option>
-                                    <option>Costa Rica</option>
-                                    <option>Cuba</option>
-                                    <option>Ecuador</option>
-                                    <option>El Salvador</option>
-                                    <option>Guatemala</option>
-                                    <option>Honduras</option>
-                                    <option>México</option>
-                                    <option>Nicaragua</option>
-                                    <option>Panamá</option>
-                                    <option>Paraguay</option>
-                                    <option>Perú</option>
-                                    <option>Puerto Rico</option>
-                                    <option>República Dominicana</option>
-                                    <option>Uruguay</option>
-                                    <option>Venezuela</option>
-
-                                    <!-- Más opciones aquí -->
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Radio buttons for communication -->
-                   
-
-                    <!-- Textarea for message -->
-                    <div class="form-group" id ="formulario">
-                        <label class="col-md-4 control-label">¿Por qué nos contactas?</label>
-                        <div class="col-md-4 inputGroupContainer">
-                            <div class="input-group">
-                                <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
-                                <textarea class="form-control" name="comment"
-                                    placeholder="Descripción del proyecto"></textarea>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label class="col-md-4 control-label">¿fue facil usar la pagina?</label>
                         <div class="col-md-4">
-                            <div class="radio">
-                                <label>
-                                    <input type="radio" name="hosting" value="yes"> Sí
-                                </label>
-                            </div>
-                            <div class="radio">
-                                <label>
-                                    <input type="radio" name="hosting" value="no"> No
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Success message -->
-                    <div class="alert alert-success" role="alert" id="success_message">
-                        ¡Éxito! <i class="glyphicon glyphicon-thumbs-up"></i> Gracias por contactarnos, nos pondremos en
-                        contacto contigo pronto.
-                    </div>
-
-                    <!-- Button -->
-                    <div class="form-group">
-                        <label class="col-md-4 control-label"></label>
-                        <div class="col-md-4">
-                            <a href="../templates/contacto.html">
-                                <button type="button" class="btn btn-warning">Enviar <span class="glyphicon glyphicon-send"></span></button>
-                            </a>
+                            <button type="submit" class="btn btn-warning">Enviar <span class="glyphicon glyphicon-send"></span></button>
                         </div>
                     </div>
 
                 </fieldset>
             </form>
-        </div><!-- /.container -->
-        
-        
+        </div>
     </main>
+
     <footer>
         <div class="final-titulo">
-         <h1>Contacto</h1>
-         <h1 class="h12"> seguinos </h1>
-
+            <h1>Contacto</h1>
+            <h2>Síguenos</h2>
         </div>
         
         <div class="final-p">
-            <p>tel: 2616412794</p>
-            <p>gmail:juanmaruizrighi@gmail.com</p>
+            <p>Tel: 2616412794</p>
+            <p>Email: juanmaruizrighi@gmail.com</p>
         </div>
-        <a class="img" href="">
-            <img  src="../utilities/whatsapp-svgrepo-com.svg" alt=" whatsapp-svgrepo-com">
+        <a href="https://wa.me/2616412794">
+            <img src="../utilities/whatsapp-svgrepo-com.svg" alt="WhatsApp">
         </a>
-
-          <a class="img2" href="https://www.instagram.com/juanba135/">
-            <img  src="../utilities/instagram-1-svgrepo-com.svg" alt="instagram-1">
+        <a href="https://www.instagram.com/juanba135/">
+            <img src="../utilities/instagram-1-svgrepo-com.svg" alt="Instagram">
         </a>
-       
     </footer>
-   <script src="../js/formulario.js"></script>
+
+    <script src="../js/formulario.js"></script>
+</body>
 
 </html>
