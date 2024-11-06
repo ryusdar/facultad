@@ -79,10 +79,10 @@ main {
 	box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
 }
 .a1{
-    left: 10px;
+    left: 25px;
     position: relative;
     display: flex;
-    top: -20px;
+    top: -25px;
 }
 .formulario__checkbox-si{
     position: relative;
