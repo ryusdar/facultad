@@ -58,7 +58,7 @@ formulario.addEventListener('submit', (e) => {
 	const terminos = document.getElementById('terminos') 
     const terminos_no = document.getElementById('terminos-no') 
 
-	if(campos.nombre  && campos.correo && campos.telefono && terminos.checked && terminos_no.checked){
+	if(campos.nombre  && campos.correo && campos.telefono && terminos.checked || terminos_no.checked){
 		formulario.reset();
 
 		document.getElementById('formulario__mensaje-exito').classList.add('formulario__mensaje-exito-activo');
