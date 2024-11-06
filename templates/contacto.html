@@ -23,47 +23,55 @@
     </header>
     <main>
         <div class="container">
-            <form action="" class="formulario" id="formulario">
-                <!-- Grupo: Usuario -->
-                <div class="formulario__grupo" id="grupo__usuario">
-                    <label for="usuario" class="formulario__label">Usuario</label>
-                    <div class="formulario__grupo-input">
-                        <input type="text" class="formulario__input" name="usuario" id="usuario" placeholder="john123">
-                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
-                    </div>
-                    <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
-                </div>
-                    <!-- Text input -->
+            <form class="formulario" action="" method="post" id="formulario">
+                <fieldset>
+                    <!-- Form Name -->
+                    <legend>Formulario de Consulta</legend>
 
-                    <div class="form-group" id="grupo__apellido">
-                        <label for="last_name">Apellido</label>
-                        <div class="input-group">
-                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                            <input name="last_name" placeholder="Apellido" class="form-control" type="text" id="last_name">
+                    <!-- Text input -->
+                    <div class="form-group" id="grupo__usuario">
+                        <label class="col-md-4 control-label" for="usuario">Nombre</label>
+                        <div class="col-md-4 inputGroupContainer" >
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                <input name="usuario" placeholder="Nombre" class="form-control" type="text" id="usuario">
+                            </div>
                         </div>
-                        <p class="formulario__input-error">Por favor, ingrese su apellido.</p>
+                        <p class="formulario__input-error">ingrese su Nombre</p>
+                    </div>
+
+                    <!-- Text input -->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">Apellido</label>
+                        <div class="col-md-4 inputGroupContainer">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                <input name="last_name" placeholder="Apellido" class="form-control" type="text">
+                            </div>
+                        </div>
                     </div>
 
                     <!-- Email input -->
-                    <div class="formulario__grupo" id="grupo__correo">
-                        <label for="correo" class="formulario__label">Correo Electrónico</label>
-                        <div class="formulario__grupo-input">
-                            <input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com">
-                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">E-Mail</label>
+                        <div class="col-md-4 inputGroupContainer">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                                <input name="email" placeholder="Correo electrónico" class="form-control" type="text">
+                            </div>
                         </div>
-                        <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
                     </div>
-        
+
                     <!-- Phone input -->
-                    <div class="formulario__grupo" id="grupo__telefono">
-                        <label for="telefono" class="formulario__label">Teléfono</label>
-                        <div class="formulario__grupo-input">
-                            <input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="4491234567">
-                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">Número de teléfono</label>
+                        <div class="col-md-4 inputGroupContainer">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+                                <input name="phone" placeholder="(54)261-555-1212" class="form-control" type="text">
+                            </div>
                         </div>
-                        <p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 14 dígitos.</p>
                     </div>
-        
 
                     <!-- Select dropdown for location -->
                     <div class="form-group">
@@ -131,19 +139,17 @@
                         </div>
                     </div>
                     <!-- Success message -->
-                    <div class="formulario__mensaje" id="formulario__mensaje">
-                        <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+                    <div class="alert alert-success" role="alert" id="success_message">
+                        ¡Éxito! <i class="glyphicon glyphicon-thumbs-up"></i> Gracias por contactarnos, nos pondremos en
+                        contacto contigo pronto.
                     </div>
-        
-                
-                    </div>
+
                     <!-- Button -->
                     <div class="form-group">
                         <label class="col-md-4 control-label"></label>
                         <div class="col-md-4">
                             <a href="../templates/contacto.html">
                                 <button type="button" class="btn btn-warning">Enviar <span class="glyphicon glyphicon-send"></span></button>
-                                <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
                             </a>
                         </div>
                     </div>
