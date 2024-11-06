@@ -61,8 +61,8 @@ header img {
 .des{
     position: relative;
     display: flex;
-    top: -25px;
-    left: 150px;
+    left: 230px;
+    top: 40px;
 }
 #desde{
     position: relative;
