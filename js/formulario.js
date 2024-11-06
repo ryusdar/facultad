@@ -15,7 +15,7 @@ const campos = {
 	password: false,
 	correo: false,
 	telefono: false
-}
+} 
 
 const validarFormulario = (e) => {
 	switch (e.target.name) {
