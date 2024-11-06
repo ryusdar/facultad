@@ -13,7 +13,7 @@ formulario.addEventListener('submit',(e)=> {
     e.preventDefault();
 } )
 const campos = {
-	usuario: true,
+	usuario: false,
 	nombre: false,
 	password: false,
 	correo: false,
