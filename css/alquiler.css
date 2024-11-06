@@ -61,13 +61,13 @@ header img {
 .des{
     position: relative;
     display: flex;
-    
-    top: 40px;
+  top: 40px;
 }
 #desde{
     position: relative;
     display: flex;
-    left: 490px;
+    left:50px
+    
 }
 .hasta{
     width: 60px;
