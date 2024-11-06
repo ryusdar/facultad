@@ -11,7 +11,7 @@ const expresiones = {
 
 formulario.addEventListener('submit',()=> {} )
 const campos = {
-	usuario: false,
+	usuario: true,
 	nombre: false,
 	password: false,
 	correo: false,
