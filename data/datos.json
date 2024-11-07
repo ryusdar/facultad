@@ -13,13 +13,15 @@
       "titulo": "Casa Palmares ",
       "descripcion": "Cuenta con una living comedor amplio con pisos plastificados, 2 dormitorios con uno en suite, otro baño completo y cocina con lavandería integrada. El balcón cerrado es frontal y amplio. Cuenta con una cochera con ingreso por portón automatico.",
       "precio": 1200, 
-      "img": "../assets/download_image_1717276249391.png"
+      "img": "../assets/download_image_1717276249391.png",
+      "ver mas":"../templates/producto1.html"
     },
     {
       "titulo": "Casa Dalvian",
       "descripcion": "living comedor amplio  con pisos de parquet, chimenea y carpintería de aluminio, techos altos de madera, patio con quinco de madera y una picina de 15m , 2 habitaciones grandes y 2 pequeña con escritorio,muy luminos,Cocina con pisos porcelanato.",
       "precio": 300000,
-      "img": "../assets/download_image_1717276319265.png"
+      "img": "../assets/download_image_1717276319265.png",
+      "ver mas":"../templates/producto3.html"
     }
     
   ]
