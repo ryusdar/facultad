@@ -8,7 +8,6 @@ const expresiones = {
 }
 
 const campos = {
-	
 	nombre: false,
 	correo: false,
 	telefono: false
@@ -55,17 +54,16 @@ inputs.forEach((input) => {
 formulario.addEventListener('submit', (e) => {
 	e.preventDefault();
 
-	const terminos = document.getElementById('terminos') 
-    const terminos_no = document.getElementById('terminos-no') 
+	 
 
-	if(campos.nombre  && campos.correo && campos.telefono && terminos.checked || terminos_no.checked){
+	if(campos.nombre  && campos.correo && campos.telefono ){
 		formulario.reset();
 
 		document.getElementById('formulario__mensaje-exito').classList.add('formulario__mensaje-exito-activo');
 		setTimeout(() => {
 			document.getElementById('formulario__mensaje-exito').classList.remove('formulario__mensaje-exito-activo');
 		}, 5000);
-        
+
         document.querySelectorAll('.formulario__grupo-correcto').forEach((icono) => {
 			icono.classList.remove('formulario__grupo-correcto');
 		});
