@@ -22,55 +22,39 @@
     </header>
     <main>
         <div class="container">
-            <form class="well form-horizontal" action="" method="post" id="contact_form">
-                <fieldset>
-                    <!-- Form Name -->
-                    <legend>Formulario de Venta</legend>
-                    <!-- Text input -->
-                    <div class="form-group">
-                        <label class="col-md-4 control-label">Nombre</label>
-                        <div class="col-md-4 inputGroupContainer">
-                            <div class="input-group">
-                                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                <input name="first_name" placeholder="Nombre" class="form-control" type="text">
-                            </div>
-                        </div>
-                    </div>
+            <form action="" class="formulario" id="formulario">
 
-                    <!-- Text input -->
-                    <div class="form-group">
-                        <label class="col-md-4 control-label">Apellido</label>
-                        <div class="col-md-4 inputGroupContainer">
-                            <div class="input-group">
-                                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                <input name="last_name" placeholder="Apellido" class="form-control" type="text">
-                            </div>
-                        </div>
+                <!-- Grupo: Nombre -->
+                <div class="formulario__grupo" id="grupo__nombre">
+                    <label for="nombre" class="formulario__label">Nombre y Apellido </label>
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="juan rodriguez">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
                     </div>
-
-                    <!-- Email input -->
-                    <div class="form-group">
-                        <label class="col-md-4 control-label">E-Mail</label>
-                        <div class="col-md-4 inputGroupContainer">
-                            <div class="input-group">
-                                <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-                                <input name="email" placeholder="Correo electrónico" class="form-control" type="text">
-                            </div>
-                        </div>
+                    <p class="formulario__input-error">	solo contener tener su nombre y apellido 	</div>
+    
+                
+    
+                <!-- Grupo: Correo Electronico -->
+                <div class="formulario__grupo" id="grupo__correo">
+                    <label for="correo" class="formulario__label">Correo Electrónico</label>
+                    <div class="formulario__grupo-input">
+                        <input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
                     </div>
-
-                    <!-- Phone input -->
-                    <div class="form-group">
-                        <label class="col-md-4 control-label">Número de teléfono</label>
-                        <div class="col-md-4 inputGroupContainer">
-                            <div class="input-group">
-                                <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-                                <input name="phone" placeholder="(54)261-555-1212" class="form-control" type="text">
-                            </div>
-                        </div>
+                    <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+                </div>
+    
+                <!-- Grupo: Teléfono -->
+                <div class="formulario__grupo" id="grupo__telefono">
+                    <label for="telefono" class="formulario__label">Teléfono</label>
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="2615412794">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
                     </div>
+                    <p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 14 dígitos.</p>
+                </div>
 
-                    <!-- Select dropdown for location -->
                     <div class="form-group">
                         <label class="col-md-4 control-label">¿que desea vender?</label>
                         <div class="col-md-4 selectContainer">
@@ -88,10 +72,6 @@
                             </div>
                         </div>
                     </div>
-
-                    <!-- Radio buttons for communication -->
-                   
-
                     <!-- Textarea for message -->
                     <div class="form-group">
                         <label class="col-md-4 control-label">¿descripcion del inmueble?</label>
@@ -105,26 +85,15 @@
                     </div>
 
 
-                    <!-- Success message -->
-                    <div class="alert alert-success" role="alert" id="success_message">
-                        ¡Éxito! <i class="glyphicon glyphicon-thumbs-up"></i> Gracias por contactarnos, nos pondremos en
-                        contacto contigo pronto.
+                    <div class="formulario__mensaje" id="formulario__mensaje">
+                        <p><i class="fas fa-exclamation-triangle" id="formulario__mensaje-incorrecto"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
                     </div>
-
-                    <!-- Button -->
-                    <div class="form-group">
-                        <label class="col-md-4 control-label"></label>
-                        <div class="col-md-4">
-                            <a href="../templates/venta.html">
-                                <button type="button" class="btn btn-warning">Enviar <span class="glyphicon glyphicon-send"></span></button>
-                            </a>
-                        </div>
+        
+                    <div class="formulario__grupo formulario__grupo-btn-enviar">
+                        <button type="submit" class="formulario__btn">Enviar</button>
+                        <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
                     </div>
-                    
-                    
-
-                </fieldset>
-            </form>
+                </form>
         </div><!-- /.container -->
     </main>
 
@@ -149,6 +118,7 @@
         </a>
 
     </footer>
+    <script src="../js/venta.js"></script>
 </body>
 
 </html>
