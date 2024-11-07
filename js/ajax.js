@@ -89,6 +89,7 @@ function BuscarProductos() {
                             <h2>${el.titulo}</h2>
                             <p>${el.descripcion}</p>
                             <p>${el.precio}</p>
+                             <a href="${el['ver_mas']}" >Ver más</a>
                             </div>`;
                         } else {
                         }
@@ -107,6 +108,7 @@ function BuscarProductos() {
                         <h2>${el.titulo}</h2>
                         <p>${el.descripcion}</p>
                         <p>${el.precio}</p>
+                        <p>${el.ver_mas}</p>
                         </div>`;
                     } else {
                     }
