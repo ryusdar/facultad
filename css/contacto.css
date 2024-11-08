@@ -100,9 +100,16 @@ main {
 	margin-bottom: 0;
 	display: none;
 }
+.formulario__mensaje-incorrecto-activo {
+    display: block;
+    /* Otros estilos, como el color de fondo, bordes, etc. */
+}
+.formulario__mensaje-incorrecto {
+    display: none;
+}
 
 .formulario__input-error-activo {
-	display: block;
+	display: none;
 }
 
 .formulario__validacion-estado {

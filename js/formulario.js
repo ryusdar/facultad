@@ -55,29 +55,40 @@ inputs.forEach((input) => {
 formulario.addEventListener('submit', (e) => {
 	e.preventDefault();
 
-	const terminos = document.getElementById('terminos') 
-    const terminos_no = document.getElementById('terminos-no') 
+	const terminos = document.getElementById('terminos');
+    const terminos_no = document.getElementById('terminos-no');
 
-	if(campos.nombre  && campos.correo && campos.telefono && terminos.checked || terminos_no.checked){
+	if (campos.nombre && campos.correo && campos.telefono && ((terminos.checked && !terminos_no.checked) || (!terminos.checked && terminos_no.checked))) { 
+		
 		formulario.reset();
+		
+		terminos.checked = false;
+        terminos_no.checked = false;
 
-		document.getElementById('formulario__mensaje-exito').classList.add('formulario__mensaje-exito-activo');
-		setTimeout(() => {
-			document.getElementById('formulario__mensaje-exito').classList.remove('formulario__mensaje-exito-activo');
-		}, 5000);
+        // Reiniciar el estado de los campos
+        for (let campo in campos) {
+            campos[campo] = false;
+        }
 
-        document.getElementById('formulario__grupo-incorrecto').classList.add('formulario__validacion-estado')
-		setTimeout(() => {
-			document.getElementById('formulario__grupo-incorrecto').classList.remove('formulario__validacion-estado');
-		}, 5000);
-        document.querySelectorAll('.formulario__grupo-correcto').forEach((icono) => {
-			icono.classList.remove('formulario__grupo-correcto');
+		Swal.fire({
+			icon: 'success',
+			title: 'Formulario enviado correctamente',
+			text: 'Gracias por completar el formulario.',
+			timer: 5000,
+			showConfirmButton: false
+		});
+
+		document.querySelectorAll('.formulario__mensaje-correcto').forEach((icono) => {
+			icono.classList.remove('formulario__mensaje-correcto');
 		});
 
 	} else {
-        setTimeout(()=>{
-            document.getElementById('formulario__mensaje').classList.add('formulario__mensaje-activo', 5000);
-        })
-		
+		Swal.fire({
+			icon: 'error',
+			title: 'Error',
+			text: 'Por favor, completa todos los campos correctamente.',
+			timer: 5000,
+			showConfirmButton: false
+		});
 	}
 });
