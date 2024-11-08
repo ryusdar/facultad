@@ -56,22 +56,36 @@ formulario.addEventListener('submit', (e) => {
 
 	 
 
-	if(campos.nombre  && campos.correo && campos.telefono ){
+	if (campos.nombre && campos.correo && campos.telefono) {
+		// Resetear el formulario
 		formulario.reset();
 
-		document.getElementById('formulario__mensaje-exito').classList.add('formulario__mensaje-exito-activo');
-		setTimeout(() => {
-			document.getElementById('formulario__mensaje-exito').classList.remove('formulario__mensaje-exito-activo');
-		}, 5000);
-
-        document.querySelectorAll('.formulario__grupo-correcto').forEach((icono) => {
+		// Resetear el estado visual de todos los campos
+		document.querySelectorAll('.formulario__grupo-correcto').forEach((icono) => {
 			icono.classList.remove('formulario__grupo-correcto');
 		});
 
+		// Restablecer el objeto campos
+		for (let campo in campos) {
+			campos[campo] = false;
+		}
+
+		// Mostrar SweetAlert de éxito
+		Swal.fire({
+			icon: 'success',
+			title: 'Formulario enviado correctamente',
+			text: 'Gracias por completar el formulario.',
+			timer: 5000,
+			showConfirmButton: false
+		});
 	} else {
-        setTimeout(()=>{
-            document.getElementById('formulario__mensaje').classList.add('formulario__mensaje-activo', 5000);
-        })
-		
+		// Mostrar SweetAlert de error
+		Swal.fire({
+			icon: 'error',
+			title: 'Error',
+			text: 'Por favor, completa todos los campos correctamente.',
+			timer: 5000,
+			showConfirmButton: false
+		});
 	}
 });
