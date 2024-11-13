@@ -1,3 +1,6 @@
+window.onload = function() {
+    GetProductos();
+}
 function GetProductos() {
     const xhr = new XMLHttpRequest(),
         $lista = document.getElementById('listado');
@@ -25,6 +28,7 @@ function GetProductos() {
                     <h2>${el.titulo}</h2>
                     <p>${el.descripcion}</p>
                     <p>${el.precio}</p>
+                    <a href="${el['ver_mas']}" >Ver más</a>
                     </div>`;
                 });
             }
@@ -108,7 +112,7 @@ function BuscarProductos() {
                         <h2>${el.titulo}</h2>
                         <p>${el.descripcion}</p>
                         <p>${el.precio}</p>
-                        <p>${el.ver_mas}</p>
+                         <a href="${el['ver_mas']}" >Ver más</a>
                         </div>`;
                     } else {
                     }
@@ -124,6 +128,64 @@ function BuscarProductos() {
             </div>`;
         }
     });
+// Añade eventos de escucha a los inputs de precio y categoría
+document.getElementById('desde').addEventListener('input', verificarCampos);
+document.getElementById('hasta').addEventListener('input', verificarCampos);
+document.getElementById('categoria').addEventListener('input', verificarCampos);
+
+function verificarCampos() {
+    var desde = document.getElementById('desde').value;
+    var hasta = document.getElementById('hasta').value;
+    var cat = document.getElementById('categoria').value;
+
+    // Si todos los campos están vacíos, se reinicia la lista sin repetir
+    if (desde === '' && hasta === '' && cat === '') {
+        GetProductos(); // Llama a la función que carga todos los productos
+    }
+}
+
+function GetProductos() {
+    const xhr = new XMLHttpRequest(),
+        $lista = document.getElementById('listado');
+
+    // Limpia el contenido del contenedor antes de cargar nuevos productos
+    $lista.innerHTML = '';
+
+    xhr.addEventListener('readystatechange', (e) => {
+        if (xhr.readyState !== 4) return;
+
+        if (xhr.status >= 200 && xhr.status < 300) {
+            console.log('conectado');
+            let json = JSON.parse(xhr.responseText);
+
+            for (var p in json) {
+                $lista.innerHTML += `<h1>${p}</h1>`;
+                json[p].forEach((el) => {
+                    $lista.innerHTML += `
+                    <div class="tarjeta">
+                        <img src="${el.img}" alt="">
+                        <h2>${el.titulo}</h2>
+                        <p>${el.descripcion}</p>
+                        <p>${el.precio}</p>
+                        ${el.ver_mas ? `<a href="${el.ver_mas}">Ver más</a>` : ''}
+                    </div>`;
+                });
+            }
+        } else {
+            $lista.innerHTML = `
+            <div class="tarjeta">
+                <img src="" alt="">
+                <h2>Error no se encontraron datos</h2>
+                <p>${xhr.status}</p>
+                <p>${xhr.statusText}</p>
+            </div>`;
+        }
+    });
+
+    xhr.open("GET", '../data/datos.json');
+    xhr.send();
+}
+
 
     xhr.open("GET", '../data/datos.json');
 
