@@ -58,42 +58,69 @@ header img {
     /* Espacio entre las tarjetas */
     flex-wrap: wrap;
 }
-#categoria{
-    position: relative;
-    left: 260px;
-    top: 75px;
-
+/* Estilos generales */
+#desde, #hasta, .buscar {
+    display: flex;
 }
 .des{
-    position: relative;
-    display: flex;
-  top: 45px;
-  width: 50px;
-    border: solid black;
-}
-#desde{
-    position: relative;
-    display: flex;
-    left:60px
-
-}
-.hasta{
     width: 60px;
-    border: solid black;
-    position: relative;
-    top: -30px;
-    left: 430px;
+    border: 1px solid black ;
+    padding: auto;
+   
 }
-#hasta{
+#desde {
+    left: 60px;
+    
+}
+
+.hasta {
     position: relative;
+
+    width: 60px;
+    border: 1px solid black;
+    top: 10px;
+    
+}
+
+#hasta {
     left: 510px;
     top: -75px;
 }
-.buscar{
+
+.buscar {
     left: 550px;
-    position: relative;
     top: -75px;
 }
+#categoria{
+    left: 200px;
+    position: relative;
+    top: 65px;
+}
+
+/* Estilos para pantallas pequeñas (320px - 1050px) */
+@media (min-width: 320px) and (max-width: 1050px) {
+    #desde {
+        left: 60px;
+    }
+
+    .hasta {
+        position: relative;
+        top: 10px;
+        
+    }
+
+    #hasta {
+        left: 510px;
+        top: -75px;
+    }
+
+    .buscar {
+        position: relative;
+        left: 200px;
+        top: -30px;
+    }
+}
+
 .tarjeta {
     flex: 0 1 calc(50% - 10px);
     /* Establece el ancho de cada tarjeta, con un margen de 10px entre ellas */
